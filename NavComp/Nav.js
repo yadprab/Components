@@ -7,7 +7,9 @@ const Nav = ({ img, title, source, navObj }) => {
     <>
       <nav>
         <section className="logo--section">
-          <Link t0='/'>{img ? <Img img={source} /> : <Title title={title} />}</Link>
+          <Link to="/">
+            {img ? <Img img={source} /> : <Title title={title} />}
+          </Link>
         </section>
 
         <ul className="desktop--nav">
